@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayaz - Developer Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;700&family=Roboto:ital,wght@0,700;1,400&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        
+        body{
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins' sans-serif;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(2, 2, 43);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+           
+        }
+
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        .left{
+            font-size: 1.5rem;
+        }
+
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 110px 0;
+        }
+
+        .firstSection >div{
+            width: 32%;
+        }
+
+        .left-Section{
+            font-size: 3rem;
+        }
+
+        .left-Section .btn{
+            padding: 12px;
+            background: rgb(16, 5, 43);
+            border: 2px solid white;
+            color: white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .left-Section .buttons{
+            padding: 50px 0;
+        }
+
+        .right-Section img{
+            width: 80%;
+   
+            
+        }
+        .purple{
+            color: rgb(142, 98, 184);
+        }
+
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+
+    }
+
+    nav ul li a:hover{
+        color: rgb(172, 172, 218);
+        font-size: 1.02rem;
+    }
+
+    #element{
+        color: rgb(142, 98, 184);
+    }
+
+    .secondSection{
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+    }
+
+    main hr{
+        border: 0;
+        height: 1.2px;
+        background: rgb(95, 93, 177);
+        margin: 40px 84px;
+    }
+
+    .secondSection h1{
+        font-size: 1.9rem;
+    }
+
+    .grey{
+        color: grey;
+    }
+
+    .secondSection .box{
+        background: white;
+        width: 81vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+    }
+
+    .secondSection .vertical{
+        height: 93px;
+        width: 1px;
+        background: white;
+        margin: 0 6vw;
+    }
+
+    .image-top{
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+    }
+    .vertical-title{
+        position: relative;
+        top: 75px;
+        width: 150px;
+    }
+
+    .vertical-desc{
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 150px;
+        font-size: 9px;
+    }
+
+    footer{
+        background-color: rgb(7, 10, 26);
+        
+    }
+
+    .footer{
+        display: flex;
+        padding: 23px 123px;
+        justify-content: space-evenly;
+
+    }
+
+    .footer ul{
+        list-style: none;
+
+    }
+   
+    .footer>div {
+        width: 223px;
+    }
+
+    footer .footer-rights{
+        text-align: center;
+        color: gray;
+        padding: 14px 0;
+    }
+
+    @media screen and (max-width: 2000px) {
+        body{
+            /* background-color: red; */
+            min-width: fit-content;
+        }
+        .box{
+            flex-direction: column;
+        }
+
+        nav{
+            flex-direction: column;
+        }
+        .secondSection .vertical{
+            height: unset;
+        }
+
+        .vertical-title, .vertical-desc{
+            left: 45px;
+        }
+
+        .secondSection .box{
+            width: 50vw;
+        }
+
+        .firstSection{
+            flex-direction: column-reverse;
+        }
+
+        .left-Section {
+            width: 100% !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .right-Section{
+            width: 721px !important;
+            display: flex;
+            justify-content: center;
+        }
+
+        .right-Section img{
+            width: 45vw;
+            margin-bottom: 75px;
+        }
+
+        .secondSection{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 141vh;
+        }
+
+        .image-top{
+            top: 122px;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="left">Ayaz's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+            <section class="firstSection">
+                <div class="left-Section">
+                    <div>Hi My name is <span class="purple">Ayaz</span></div>
+                    <div>
+                and I am a passionate
+                    </div>
+                    <span id="element"></span>
+                    <div class="buttons">
+                        
+                        <a href="resume.pdf" target="_blank"><button class="btn">Download resume</button></a>
+                       <a href="https://github.com/Iaak12" target="_blank"><button class="btn">Visit GitHub</button></a>
+                    </div>
+                </div>
+
+                <div class="right-Section">
+                    <img src="bg.png" alt="Developer picture">
+                </di    v>
+        </section>
+<hr>
+        <section class="secondSection">
+            <span class="grey">What I have done so far</span>
+            <h1>Skills and Learnings</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="developer picture">
+                    <div class="vertical-title">
+                        HTML Developer 
+                    </div>
+                    <div class="vertical-desc">
+                        An HTML developer is a professional web designer who uses HTML to create website layouts based on templates and wireframes. HTML is a semantic language used to control how information on websites and in web apps is structured and to determine how users navigate and interact with them.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="nodejs.png" alt="developer picture">
+                    <div class="vertical-title">
+                        Node JS Developer 
+                    </div>
+                    <div class="vertical-desc">
+                        A Node.js developer is responsible for writing server-side web application logic in JavaScript and/or variants of it, such as CoffeeScript, IcedCoffeeScript, etc. Node.js developers usually develop back-end components, connect the application with the other (often third-party) web services, and support the front-end developers by integrating their work with the Node.js application.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="react.png" alt="developer picture">
+                    <div class="vertical-title">
+                        React Developer 
+                    </div>
+                    <div class="vertical-desc">
+                        A React developer is responsible for the design and implementation of user interfaces (UIs) and UI components using React, a front-end JavaScript library. They develop and maintain UIs for web and mobile apps
+                    </div>
+                </div>
+
+
+                <div class="vertical">
+                    <img class="image-top" src="mongodb.png" alt="developer picture">
+                    <div class="vertical-title">
+                        Mongo DB Developer 
+                    </div>
+                    <div class="vertical-desc">
+                        MongoDB is an open-source NoSQL database management program. NoSQL databases are useful for working with large sets of distributed data and can be used as an alternative to traditional relational databases. MongoDB Developers specialize in developing applications that utilize the MongoDB database management system.
+
+                    </div>
+                </div>
+
+
+                <div class="vertical">
+                    <img class="image-top " src="mern.jpg" alt="developer picture">
+                    <div class="vertical-title">
+                       Mern Stack Developer 
+                    </div>
+                    <div class="vertical-desc">
+                        MERN Stack is a combination of the latest technologies used for creating premium web applications. These applications are developed using multiple frameworks, databases, libraries, and more. It comprises several open-source components such as MongoDB, React, Node. js, and ExpressJS framework.
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Ayaz's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <a href=""><li>Home</li></a>
+                    <a href=""><li>About</li></a>
+                    <a href=""><li>Services</li></a>
+                    <a href=""><li>Contact</li></a>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <a href="https://www.instagram.com/iayaz12/?igsh=M2liZXgyd3lwZzQ%3D" target="_blank"><li>insta</li></a>
+                    <a href="" target="_blank"><li>email</li></a>
+                    <a href="" target="_blank"><li>twitter</li></a>
+                    <a href="https://discord.com/invite/8YHkftE7" target="_blank"><li>discord</li></a>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank"><li>Web-developer</li></a>
+                    <a href="https://www.coursera.org/articles/mern-stack" target="_blank"><li>Mern-Stack</li></a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><li>Mdn-html</li></a>
+                    <a href="https://squareboat.com/blog/difference-between-ux-ui-designer-and-web-designer" target="_blank"><li>UI/UX Design</li></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-rights">
+           Copyright&#169;ayazsportfolio.com | All rights Reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Full Stack Web Developer', 'Web UI/UX Designer' ,'Video Editor','Web Developer'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
